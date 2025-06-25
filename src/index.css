@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+
+:root {
+    --color-primary: #252525;
+    /* Example: black */
+    --color-secondary: #ffffff;
+    /* Example: white */
+    --primary: #252525;
+    --primary-hover: #333333;
+    --text-primary: #252525;
+    --bg-primary: #ffffff;
+    --border-primary: #252525;
+    --text-secondary: #787878;
+    /* Add more as needed */
+}
+
+.dark {
+    --primary: #FFFFFF;
+    --primary-hover: #E5E5E5;
+    --text-primary: #ffffff;
+    --bg-primary: #252525;
+    --border-primary: #ffffff;
+    --text-secondary: #a3a3a3;
+}
+
+/* Add custom navbar styles here if needed */
+
+
+@layer base {
+    :root {
+        --text-primary: #252525;
+        --text-secondary: #787878;
+        --bg-primary: #ffffff;
+        --bg-secondary: #f5f5f5;
+        --border-color: #252525;
+    }
+
+    .dark {
+        --text-primary: #ffffff;
+        --text-secondary: #a3a3a3;
+        --bg-primary: #252525;
+        --bg-secondary: #1a1a1a;
+        --border-color: #ffffff;
+    }
+
+    body {
+        @apply bg-[var(--bg-primary)] text-[var(--text-primary)] transition-colors duration-200;
+    }
+}
