@@ -15,7 +15,7 @@ export default function Sidebar({ collapsed, setCollapsed }) {
     <aside
       className={`
         flex flex-col h-full
-        bg-[var(--bg-primary)] dark:bg-[#252525]
+        bg-[var(--bg-primary)] dark:bg-#252525
         text-[var(--text-primary)]
         transition-all duration-300 ease-in-out
         w-full
